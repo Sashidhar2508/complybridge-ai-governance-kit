@@ -1,21 +1,22 @@
-# ComplyBridge – Practical AI Governance & Advisory Suite for Indian SaaS & GCCs
+# ComplyBridge: Practical AI Governance, IP Protection & Advisory Suite for Indian SaaS and GCCs
 
-**Author & Principal Advisor:** Sashidhar Sripadanna (IAPP AIGP Candidate | OCI Certified AI Associate | 13+ Yrs Enterprise Cloud & TAM Leadership)  
+**Author and Principal Advisor:** Sashidhar Sripadanna (IAPP AIGP Candidate | OCI Certified AI Associate | 13+ Years Enterprise Cloud and TAM Leadership)  
 **Advisory Practice Timeline:** March 2025 – Present  
-**Regulatory Alignment:** EU AI Act (incl. Regulation (EU) 2026/1744 Digital Omnibus), NIST AI RMF 1.0, ISO/IEC 42001 AIMS, and India DPDP Act
+**Regulatory and IP Alignment:** EU AI Act (including Regulation (EU) 2026/1744 Digital Omnibus), NIST AI RMF 1.0, ISO/IEC 42001 AIMS, India DPDP Act, India IT Amendment Rules 2026, and Enterprise Patent/IP Indemnification Standards  
+**License:** Apache License 2.0 (includes explicit patent and copyright grant; see `LICENSE`)
 
 ---
 
-## Executive Overview
+## Purpose
 
-**ComplyBridge** is a zero-code, plug-and-play AI Governance and Risk Advisory suite created between **March 2025 and Present** to close the operational translation gap between engineering teams, legal/risk functions, and enterprise procurement buyers.
+**ComplyBridge** is a practical, zero-code governance suite developed between **March 2025 and November 2026**. It is built for mid-sized Indian software companies and Global Capability Centers (GCCs) that sell AI-enabled products or delivery services to European and US enterprise buyers.
 
-Mid-sized Indian SaaS companies and Global Capability Centers (GCCs) serving European and US enterprise customers routinely stall during security and procurement reviews when asked:
-1. *What AI and generative AI systems are currently deployed across your product and internal operations?*
-2. *Are you acting as a **Provider** or **Deployer** under the EU AI Act, and what is each system's risk classification?*
-3. *Can you produce an auditable risk assessment, transparency disclosure evidence, and vendor Zero-Data-Retention (ZDR) proof without engaging a Big 4 consultancy?*
+In real enterprise sales and audit cycles, deals rarely stall over model accuracy alone. They stall when Legal, Procurement, and Information Security teams ask:
+1. Which AI systems are in production, and are you acting as a **Provider** or **Deployer** under the EU AI Act?
+2. Can you document Article 50 transparency notices, human-in-the-loop (HITL) override rules, and Zero-Data-Retention (ZDR) terms?
+3. How do you protect proprietary **patents, trade secrets, and client intellectual property** when calling third-party foundation models, and what patent indemnification do your upstream vendors provide?
 
-ComplyBridge answers these questions with structured, non-technical management artefacts ready for immediate adoption.
+ComplyBridge gives risk, legal, and technical account teams ready-to-use registers, vendor scorecards, model cards, and operational SOPs so they can answer these questions clearly without hiring a Big 4 consultancy.
 
 ---
 
@@ -23,62 +24,75 @@ ComplyBridge answers these questions with structured, non-technical management a
 
 ```text
 complybridge-ai-governance-kit/
-├── README.md                                              # Suite overview, timeline alignment & regulatory roadmap
-├── 00_ComplyBridge_Executive_Overview.docx                # Formatted executive summary for leadership & buyers
+├── README.md                                                     # Suite overview, timeline and regulatory mapping
+├── LICENSE                                                       # Apache 2.0 license with explicit patent protection
+├── 00_ComplyBridge_Executive_Overview.docx                       # Executive summary covering all five published kits
 │
-├── Project-01-AI-System-Inventory-and-Classifier/         # [PUBLISHED] Advisory Release: Mar – Jun 2025
-│   ├── README.md                                          # Project 1 methodology, scope & regulatory triggers
-│   ├── 01_AI_System_Inventory_Register.csv                # Searchable baseline register (8 worked SaaS/GCC systems)
-│   ├── 01_AI_System_Inventory_Register.docx               # Executive landscape Word register with risk-tier styling
-│   └── 02_EU_AI_Act_and_NIST_Classification_Guide.md      # Decision rules for Provider/Deployer & risk tiering
+├── Project-01-AI-System-Inventory-and-Classifier/                # Release Window: Mar – Jun 2025
+│   ├── README.md
+│   ├── 01_AI_System_Inventory_Register.csv
+│   ├── 01_AI_System_Inventory_Register.docx
+│   └── 02_EU_AI_Act_and_NIST_Classification_Guide.md
 │
-└── Project-02-Client-AI-Evidence-and-Risk-Pack/           # [PUBLISHED] Advisory Release: Jul – Oct 2025
-    ├── README.md                                          # Project 2 buyer questionnaire & evidence framework
-    ├── 01_Client_AI_Evidence_and_Risk_Pack_Template.docx  # Fillable enterprise due-diligence response pack
-    ├── 02_Worked_Example_HR_Resume_Screener.md            # Complete worked pack for an Annex III HR screening system
-    └── 03_Enterprise_Buyer_Evidence_Checklist.md          # Pre-submission GRC & Legal sign-off checklist
+├── Project-02-Client-AI-Evidence-and-Risk-Pack/                  # Release Window: Jul – Oct 2025
+│   ├── README.md
+│   ├── 01_Client_AI_Evidence_and_Risk_Pack_Template.docx
+│   ├── 02_Worked_Example_HR_Resume_Screener.md
+│   └── 03_Enterprise_Buyer_Evidence_Checklist.md
+│
+├── Project-03-Third-Party-AI-and-GPAI-Vendor-Due-Diligence/      # Release Window: Nov 2025 – Feb 2026
+│   ├── README.md
+│   ├── 01_Third_Party_AI_Vendor_Scorecard.csv
+│   ├── 01_Third_Party_AI_Vendor_Scorecard.docx
+│   └── 02_Vendor_ZDR_IP_and_Patent_Contract_Clauses.md
+│
+├── Project-04-Model-Card-and-Article-50-Transparency-Pack/       # Release Window: Mar – Jul 2026
+│   ├── README.md
+│   ├── 01_Standard_AI_Model_Card_Template.docx
+│   ├── 02_Article_50_and_India_IT_Rules_2026_Transparency_Checklist.md
+│   └── 03_Worked_Example_Support_Chatbot_Model_Card.md
+│
+└── Project-05-Lightweight-AI-GovOps-and-Incident-Playbook/       # Release Window: Aug – Nov 2026
+    ├── README.md
+    ├── 01_AI_GovOps_and_Incident_Response_Playbook.docx
+    ├── 02_AI_System_Change_and_Drift_Review_Log.csv
+    └── 03_AI_Incident_Escalation_SOP.md
 ```
 
 ---
 
-## Advisory Portfolio & Timeline Alignment (March 2025 – Present)
+## Advisory Portfolio and Timeline (March 2025 – November 2026)
 
-Each module in the ComplyBridge suite was developed sequentially to address real regulatory enforcement milestones impacting Indian technology exporters and GCCs:
+Each kit in this repository corresponds to a specific regulatory milestone and enterprise buyer requirement:
 
-| Kit / Project | Advisory Window | Deliverable Focus | Primary Regulatory Trigger Addressed | Status |
+| Kit / Project | Advisory Window | Core Deliverables | Regulatory and IP Trigger Addressed | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Project 01:** AI System Inventory & Classification Register | **Mar – Jun 2025** | Enterprise AI register, Provider vs. Deployer scoping, and EU AI Act / NIST AI RMF risk tiering | EU AI Act **Art. 4** (AI Literacy) & **Art. 5** (Prohibited Practices) entry into application (Feb 2025) | **Published** |
-| **Project 02:** Enterprise Client AI Evidence & Risk Pack | **Jul – Oct 2025** | Standardized buyer due-diligence pack, Article 50 transparency & HITL controls, and worked HR example | EU AI Act **GPAI Governance** rules (Aug 2025) & **India DPDP Act** data-processor safeguards | **Published** |
-| **Project 03:** Third-Party AI & GPAI Vendor Due-Diligence Kit | **Nov 2025 – Feb 2026** | Upstream LLM/API vendor scorecard, Zero-Data-Retention (ZDR) audit checklist, and contract clauses | Cross-border processor governance under DPDP Act & EU GPAI downstream obligations | *In Release Queue* |
-| **Project 04:** Model Card & Article 50 Transparency Pack | **Mar – Jul 2026** | Standardized Model Cards, UI bot-disclosure banners, and synthetic content marking SOPs | EU AI Act **Art. 50** enforcement (Aug 2026) & India IT Rules synthetic media disclosures | *In Release Queue* |
-| **Project 05:** Lightweight AI GovOps & Incident Playbook | **Aug – Nov 2026** | AI system change-management log, quarterly drift/bias review cadence, and 24-hr incident escalation SOP | Post-Aug 2026 enforcement & Digital Omnibus **Annex III** readiness window (through Dec 2027) | *In Release Queue* |
+| **Project 01:** AI System Inventory and Classification Register | **Mar – Jun 2025** | 10-column baseline AI register (8 worked SaaS/GCC systems), Provider vs. Deployer scoping, and EU AI Act / NIST AI RMF decision rules | EU AI Act **Art. 4** (AI Literacy) and **Art. 5** (Prohibited Practices) application (Feb 2025) | **Published** |
+| **Project 02:** Enterprise Client AI Evidence and Risk Pack | **Jul – Oct 2025** | Fillable enterprise buyer due-diligence response pack, pre-submission checklist, and worked HR screening assessment | EU AI Act **GPAI Governance** rules (Aug 2025) and **India DPDP Act** processor safeguards | **Published** |
+| **Project 03:** Third-Party AI and GPAI Vendor Due-Diligence Kit | **Nov 2025 – Feb 2026** | Upstream LLM/API vendor risk scorecard, Zero-Data-Retention (ZDR) checks, and **Patent / Copyright Indemnification** contract clauses | Cross-border processor governance, trade-secret / patent novelty preservation, and upstream GPAI risk | **Published** |
+| **Project 04:** Model Card and Article 50 Transparency Pack | **Mar – Jul 2026** | Standardized Model Card (including **Patent and Model License Attribution**), Article 50 UI notices, and C2PA provenance checklist | EU AI Act **Art. 50** enforcement (Aug 2026 / Dec 2026 marking deadline) and **India IT Amendment Rules 2026** | **Published** |
+| **Project 05:** Lightweight AI GovOps and Incident Playbook | **Aug – Nov 2026** | Post-market monitoring SOP, AI change and drift review log, and 24-hour client incident escalation runbook | Post-Aug 2026 enforcement and Digital Omnibus **Annex III** readiness window (through Dec 2027) | **Published** |
 
 ---
 
-## Project Summaries
+## Intellectual Property and Patent Governance
 
-### Project 01: AI System Inventory & Classification Register (`Mar – Jun 2025`)
-* **Folder:** [`Project-01-AI-System-Inventory-and-Classifier/`](./Project-01-AI-System-Inventory-and-Classifier)
-* **Problem Solved:** Organizations cannot govern or defend AI systems they have not catalogued. Engineering teams often deploy embedded AI features and third-party APIs faster than Legal or Risk can track them.
-* **Key Artefacts:** A 10-column inventory register pre-populated with 8 realistic Indian SaaS and GCC use cases (spanning HR recruitment, customer support RAG bots, FinTech credit scoring, workplace sentiment analytics, and internal coding assistants), explicitly distinguishing **Provider vs. Deployer** roles, **EU AI Act risk tiers**, **NIST AI RMF functions**, and **India DPDP Act** triggers.
-
-### Project 02: Enterprise Client AI Evidence & Risk Pack (`Jul – Oct 2025`)
-* **Folder:** [`Project-02-Client-AI-Evidence-and-Risk-Pack/`](./Project-02-Client-AI-Evidence-and-Risk-Pack)
-* **Problem Solved:** Enterprise sales cycles frequently stall when European or US procurement teams issue 30-to-50-question AI security and governance assessments.
-* **Key Artefacts:** A structured, client-facing due-diligence template covering system purpose, risk classification rationale, Article 50 transparency controls, human-in-the-loop (HITL) override procedures, third-party ZDR verification, and a complete worked example for an **Annex III HR Resume Screening Tool**.
+Enterprise AI adoption introduces two distinct patent and IP risks that standard IT security questionnaires miss:
+1. **Loss of Patent Novelty via Prompt Leakage:** If engineers or R&D staff paste unpatented algorithms, circuit designs, or product architectures into a third-party AI tool lacking Zero-Data-Retention (ZDR), that disclosure can compromise patentability. Project 03 and Project 05 enforce strict ZDR and confidential-input boundaries.
+2. **Third-Party Patent and Copyright Infringement Claims:** SaaS companies building on commercial or open-weights foundation models need explicit contractual patent/copyright indemnification and clear open-source license tracking. Project 03 provides ready-to-use vendor contract clauses, and Project 04 embeds patent and license attribution directly into every Model Card.
 
 ---
 
 ## How to Use This Repository
 
-1. **For Enterprise Risk, Compliance & GRC Teams:** Open `Project-01-AI-System-Inventory-and-Classifier/` to establish your baseline AI system register, then use `Project-02-Client-AI-Evidence-and-Risk-Pack/` whenever an enterprise prospect requests AI due-diligence documentation.
-2. **For Hiring Managers & Advisory Reviewers:** Inspect the `.md` and `.csv` files directly in GitHub's browser viewer for instant readability, or download the `.docx` deliverables for executive-formatted templates.
+* **In Browser (GitHub):** Open any project folder to read the `.md` playbooks and inspect the `.csv` registers directly in GitHub's table viewer.
+* **For Client Reviews and Internal Audits:** Download the `.docx` files inside each folder for clean, formatted templates ready for Word or Google Docs.
 
 ---
 
-## Contact & Advisory Background
+## Author Contact
 
 * **Name:** Sashidhar Sripadanna
-* **Focus Areas:** AI Governance & Risk Advisory (EU AI Act, NIST AI RMF, ISO/IEC 42001), Technical Account Management (TAM), Enterprise Escalation & Delivery Bridge
+* **Domain:** AI Governance and Risk Advisory (EU AI Act, NIST AI RMF, ISO/IEC 42001, India DPDP Act), Technical Account Management (TAM)
 * **LinkedIn:** [linkedin.com/in/sashidhar-s-6a6662186](https://linkedin.com/in/sashidhar-s-6a6662186)
 * **GitHub:** [github.com/sashidhar2508](https://github.com/sashidhar2508)
