@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sashidhar Sripadanna | AI Governance & Technical Account Bridge</title>
+  <style>
+    :root {
+      --navy: #1B365D;
+      --slate: #2B6CB0;
+      --bg: #F8FAFC;
+      --card: #FFFFFF;
+      --text: #1E293B;
+      --muted: #475569;
+      --border: #E2E8F0;
+      --accent-bg: #EBF4FF;
+      --green-bg: #F0FFF4;
+      --green-text: #22543D;
+      --red-bg: #FFF5F5;
+      --red-text: #9B2C2C;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 3.5rem 1.5rem 3rem;
+    }
+    .container { max-width: 1020px; margin: 0 auto; }
+    .kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #93C5FD;
+      margin-bottom: 0.6rem;
+    }
+    h1 { font-size: 2.25rem; line-height: 1.2; margin-bottom: 0.75rem; font-weight: 700; }
+    .hero-sub { font-size: 1.1rem; color: #E2E8F0; max-width: 780px; margin-bottom: 1.5rem; }
+    .badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.75rem; }
+    .badge {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.22);
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      color: #F8FAFC;
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 0.85rem; }
+    .btn {
+      display: inline-block;
+      padding: 0.65rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .btn:hover { opacity: 0.9; }
+    .btn-primary { background: #3B82F6; color: #fff; }
+    .btn-outline { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.45); }
+    section { padding: 2.75rem 1.5rem; }
+    h2 {
+      font-size: 1.45rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+    .sec-lead { color: var(--muted); margin-bottom: 1.5rem; font-size: 0.98rem; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.15rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.35rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    .card h3 { color: var(--navy); font-size: 1.05rem; margin-bottom: 0.45rem; }
+    .card p, .card li { font-size: 0.92rem; color: var(--muted); }
+    .tag {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--slate);
+      background: var(--accent-bg);
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    .card a.link {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--slate);
+      text-decoration: none;
+    }
+    .card a.link:hover { text-decoration: underline; }
+    .ba-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.35rem;
+      margin-bottom: 1.15rem;
+    }
+    .ba-title { font-weight: 700; color: var(--navy); margin-bottom: 0.75rem; font-size: 1rem; }
+    .ba-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .before {
+      background: var(--red-bg);
+      border-left: 3px solid #E53E3E;
+      padding: 0.85rem 1rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .before strong { color: var(--red-text); display: block; margin-bottom: 0.25rem; }
+    .after {
+      background: var(--green-bg);
+      border-left: 3px solid #38A169;
+      padding: 0.85rem 1rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .after strong { color: var(--green-text); display: block; margin-bottom: 0.25rem; }
+    .cta-panel {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+    }
+    .cta-panel h2 { color: #fff; border: none; margin-bottom: 0.5rem; }
+    .cta-panel p { color: #CBD5E1; max-width: 640px; margin: 0 auto 1.25rem; font-size: 0.96rem; }
+    footer {
+      text-align: center;
+      padding: 1.75rem 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="kicker">Sashidhar Sripadanna  •  Independent Capability & Advisory Portfolio</div>
+    <h1>AI Governance &amp; Technical Account Bridge</h1>
+    <p class="hero-sub">
+      Helping Indian SaaS companies and Global Capability Centers (GCCs) translate engineering reality into EU AI Act, NIST AI RMF, ISO/IEC 42001, and India DPDP Act language that enterprise buyers accept.
+    </p>
+    <div class="badges">
+      <span class="badge">IAPP AIGP Candidate</span>
+      <span class="badge">13+ Yrs US &amp; India Enterprise TAM</span>
+      <span class="badge">OCI 2025 Foundations &amp; AI Associate</span>
+      <span class="badge">Hyderabad, India  |  Open to Ireland / EU</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://github.com/Sashidhar2508/complybridge-ai-governance-kit" target="_blank" rel="noopener">Explore ComplyBridge on GitHub</a>
+      <a class="btn btn-outline" href="https://linkedin.com/in/sashidhar-s-6a6662186" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      <a class="btn btn-outline" href="mailto:jssripadanna@outlook.com?subject=AI%20Governance%20%2F%20Client%20Questionnaire%20Discussion">Discuss an AI System or Questionnaire</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Why the Bridge Matters</h2>
+    <p class="sec-lead">
+      Enterprise AI deals rarely stall because the model fails technically. They stall because Engineering, Legal, and Enterprise Procurement speak completely different languages.
+    </p>
+    <div class="grid-2">
+      <div class="card">
+        <span class="tag">Enterprise Account &amp; Escalation Foundation</span>
+        <h3>13+ Years Owning Client Trust</h3>
+        <p>
+          Across 20+ global enterprise accounts in the US and India (CBTS, Global Gate IT Solutions), I owned contractual SLAs, executive business reviews, and 50+ cross-functional Root Cause Analyses—maintaining 99%+ customer satisfaction and delivering a $2M OCI licensing optimization.
+        </p>
+      </div>
+      <div class="card">
+        <span class="tag">Applied AI Governance Practice (2025–2026)</span>
+        <h3>Zero-Code, Audit-Ready Execution</h3>
+        <p>
+          Through the open-source <strong>ComplyBridge</strong> suite, I build practical registers, buyer evidence packs, vendor Zero-Data-Retention (ZDR) scorecards, and incident SOPs that unblock European and US enterprise security reviews without Big 4 consulting overhead.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <h2>ComplyBridge Governance Toolkits (March 2025 – November 2026)</h2>
+    <p class="sec-lead">
+      Five modular, zero-code governance kits paired with worked B2B SaaS case studies and regulatory decision logs.
+    </p>
+    <div class="grid-3">
+      <div class="card">
+        <span class="tag">Project 01  •  Mar – Jun 2025</span>
+        <h3>AI System Inventory &amp; Classifier</h3>
+        <p>Solves the visibility gap: catalogues AI/GenAI systems, separates Provider vs. Deployer roles, and maps EU AI Act &amp; NIST RMF tiers with a worked Hyderabad SaaS audit.</p>
+        <a class="link" href="https://github.com/Sashidhar2508/complybridge-ai-governance-kit/tree/main/Project-01-AI-System-Inventory-and-Classifier" target="_blank" rel="noopener">View Register &amp; Case Study &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="tag">Project 02  •  Jul – Oct 2025</span>
+        <h3>Client AI Evidence &amp; Risk Pack</h3>
+        <p>Solves sales-cycle stalls: structured 48-hour enterprise buyer due-diligence pack with HITL override controls and a worked Frankfurt bank procurement response.</p>
+        <a class="link" href="https://github.com/Sashidhar2508/complybridge-ai-governance-kit/tree/main/Project-02-Client-AI-Evidence-and-Risk-Pack" target="_blank" rel="noopener">View Evidence Pack &amp; Case Study &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="tag">Project 03  •  Nov 2025 – Feb 2026</span>
+        <h3>GPAI &amp; Third-Party Vendor Scorecard</h3>
+        <p>Solves upstream API &amp; IP risk: evaluates cloud LLM providers on Zero-Data-Retention (ZDR), data residency, and patent/copyright indemnification clauses.</p>
+        <a class="link" href="https://github.com/Sashidhar2508/complybridge-ai-governance-kit/tree/main/Project-03-Third-Party-AI-and-GPAI-Vendor-Due-Diligence" target="_blank" rel="noopener">View Vendor Scorecard &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="tag">Project 04  •  Mar – Jul 2026</span>
+        <h3>Model Card &amp; Art. 50 Transparency</h3>
+        <p>Solves disclosure compliance: standardized Model Cards with patent/license attribution, UI bot notices, and India IT Rules 2026 synthetic content checks.</p>
+        <a class="link" href="https://github.com/Sashidhar2508/complybridge-ai-governance-kit/tree/main/Project-04-Model-Card-and-Article-50-Transparency-Pack" target="_blank" rel="noopener">View Model Card Pack &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="tag">Project 05  •  Aug – Nov 2026</span>
+        <h3>Lightweight AI GovOps &amp; Incident SOP</h3>
+        <p>Solves post-launch drift: quarterly bias/drift review logs, model-swap change gates, and 24-hour Sev-1 client incident escalation runbooks.</p>
+        <a class="link" href="https://github.com/Sashidhar2508/complybridge-ai-governance-kit/tree/main/Project-05-Lightweight-AI-GovOps-and-Incident-Playbook" target="_blank" rel="noopener">View GovOps Playbook &rarr;</a>
+      </div>
+      <div class="card" style="background: var(--accent-bg); border-color: #BFDBFE;">
+        <span class="tag">90-Second Executive Brief</span>
+        <h3>Quick Hiring &amp; Buyer Overview</h3>
+        <p>Download the 1-page Executive Brief summarizing the full ComplyBridge methodology, sales-cycle workflow, and advisory track record.</p>
+        <a class="link" href="https://github.com/Sashidhar2508/complybridge-ai-governance-kit/blob/main/00_Executive_One_Pager_90_Second_Brief.md" target="_blank" rel="noopener">Read 90-Second Brief &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Before &amp; After: Translating Friction into Deal Progress</h2>
+    <p class="sec-lead">Realistic scenarios showing how technical ambiguity gets converted into buyer-ready governance proof.</p>
+
+    <div class="ba-box">
+      <div class="ba-title">Scenario 1: European Bank Blocks SaaS Renewal Over Customer Support Chatbot</div>
+      <div class="ba-cols">
+        <div class="before">
+          <strong>Before (Stalled in Procurement)</strong>
+          Engineering built a RAG chatbot using a standard pay-as-you-go LLM API key with no UI AI disclosure banner. Buyer InfoSec flagged data-training leakage and EU AI Act Article 50 non-compliance.
+        </div>
+        <div class="after">
+          <strong>After (Cleared in 5 Business Days)</strong>
+          Migrated inference to an EU-pinned enterprise endpoint with signed Zero-Data-Retention (ZDR), deployed an upfront AI disclosure header, and delivered a completed Evidence Pack with a 24-hour incident SLA.
+        </div>
+      </div>
+    </div>
+
+    <div class="ba-box">
+      <div class="ba-title">Scenario 2: R&amp;D Team Pasting Proprietary Algorithms into Unmanaged Coding AI</div>
+      <div class="ba-cols">
+        <div class="before">
+          <strong>Before (Hidden IP &amp; Patent Exposure)</strong>
+          Developers used individual public-tier AI accounts to debug core scoring logic—creating trade-secret leakage and risking loss of patent novelty prior to filing.
+        </div>
+        <div class="after">
+          <strong>After (Protected IP Hygiene)</strong>
+          Catalogued the tool in the AI Inventory Register, consolidated seats onto an enterprise license with ZDR enforced, and instituted a pre-filing R&amp;D prompt boundary policy.
+        </div>
+      </div>
+    </div>
+
+    <div class="ba-box">
+      <div class="ba-title">Scenario 3: Confusing EU AI Act Article 27 FRIA Rules on Internal HR Tools</div>
+      <div class="ba-cols">
+        <div class="before">
+          <strong>Before (Over-Engineered Bottleneck)</strong>
+          Legal paused an internal ATS resume-parsing tool assuming a full statutory Fundamental Rights Impact Assessment (FRIA) was required, while overlooking auto-rejection settings.
+        </div>
+        <div class="after">
+          <strong>After (Proportionate, Accurate Compliance)</strong>
+          Clarified that Article 27 FRIAs apply to private deployers in credit/insurance scoring rather than private HR—replacing auto-rejection with mandatory Article 26 human recruiter sign-off and a targeted GDPR DPIA.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-panel">
+      <h2>Discuss a Specific AI System or Client Questionnaire</h2>
+      <p>
+        Whether you are hiring for Technology Risk, AI GRC, or Enterprise Technical Account Management—or navigating a live US/EU buyer AI questionnaire—reach out directly for a peer conversation.
+      </p>
+      <div class="cta-row" style="justify-content: center;">
+        <a class="btn btn-primary" href="mailto:jssripadanna@outlook.com?subject=AI%20Governance%20%26%20TAM%20Bridge%20Conversation">Email: jssripadanna@outlook.com</a>
+        <a class="btn btn-outline" href="https://linkedin.com/in/sashidhar-s-6a6662186" target="_blank" rel="noopener">LinkedIn Profile</a>
+        <a class="btn btn-outline" href="https://github.com/Sashidhar2508/complybridge-ai-governance-kit" target="_blank" rel="noopener">GitHub Repository</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Sashidhar Sripadanna  •  AI Governance, Risk &amp; Technical Account Advisory  •  Hyderabad, India
+</footer>
+
+</body>
+</html>
