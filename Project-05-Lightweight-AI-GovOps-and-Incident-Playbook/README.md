@@ -13,6 +13,7 @@ Many organizations treat AI governance as a one-time pre-launch checklist. Once 
 Drawing directly on 13+ years of enterprise production escalation and Technical Account Management discipline, this kit establishes **lightweight, zero-code Governance Operations (GovOps)**:
 * A **Change and Quarterly Drift Review Log** so Risk and Account teams know whenever a model version, prompt, or vendor license changes.
 * A **24-Hour AI Incident Escalation SOP** defining severity tiers, kill-switch triggers, RCA templates, and enterprise client communication SLAs.
+* A **worked Sev-1 Incident & Drift Response Case Study** and **Advisory Decision Log**.
 
 ---
 
@@ -23,3 +24,5 @@ Drawing directly on 13+ years of enterprise production escalation and Technical 
 | `01_AI_GovOps_and_Incident_Response_Playbook.docx` | Word Document | Complete operational playbook covering post-market monitoring cadence, change triggers, and incident escalation governance |
 | `02_AI_System_Change_and_Drift_Review_Log.csv` | CSV (GitHub Table) | Audit-ready operational log tracking model upgrades, quarterly drift/bias reviews, and IP/license checks |
 | `03_AI_Incident_Escalation_SOP.md` | Markdown Runbook | Step-by-step Sev-1 / Sev-2 AI incident response runbook with kill-switch criteria and client notification timelines |
+| `04_Case_Study_Sev1_RAG_Tenant_Isolation_and_Drift_Response.md` | Worked Case Study | End-to-end response to a Sev-1 RAG metadata filter bug and quarterly credit-score drift alert |
+| `05_Advisory_Decision_Log_Project_05.md` | Decision Log | Explains operational trade-offs on quarterly review cadences, kill-switch authority, and 24-hour client advisories |

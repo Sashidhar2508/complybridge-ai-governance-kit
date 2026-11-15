@@ -21,6 +21,8 @@ When an enterprise customer audits your product, they look straight through you 
 
 | File Name | Format | Purpose |
 | :--- | :--- | :--- |
-| `01_Third_Party_AI_Vendor_Scorecard.csv` | CSV (GitHub Table) | Structured 7-category vendor due-diligence scorecard with worked evaluations for 5 common AI deployment patterns |
+| `01_Third_Party_AI_Vendor_Scorecard.csv` | CSV (GitHub Table) | Structured vendor due-diligence scorecard with worked evaluations for 5 common AI deployment patterns |
 | `01_Third_Party_AI_Vendor_Scorecard.docx` | Word Document | Executive landscape Word scorecard for vendor onboarding and annual risk reviews |
 | `02_Vendor_ZDR_IP_and_Patent_Contract_Clauses.md` | Markdown Legal/GRC Aid | Practical contract checklist covering Zero-Data-Retention (ZDR), Patent Indemnification, Training-Data IP, and India DPDP cross-border rules |
+| `03_Case_Study_VeloceFlow_Vendor_ZDR_and_IP_Audit.md` | Worked Case Study | Real-world audit of 4 upstream AI vendors for a B2B FinTech SaaS firm, eliminating ZDR gaps and securing patent indemnity |
+| `04_Advisory_Decision_Log_Project_03.md` | Decision Log | Explains key legal/risk judgment calls on fee caps, open-weights liability, and pre-filing patent novelty |
