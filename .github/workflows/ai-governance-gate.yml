@@ -1,0 +1,53 @@
+name: AI Governance & Regulatory Release Gate (OPA + Policy Engine)
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'Project-06-AI-Governance-Control-Plane-and-Policy-Engine/**'
+      - '.github/workflows/ai-governance-gate.yml'
+  pull_request:
+    paths:
+      - 'Project-06-AI-Governance-Control-Plane-and-Policy-Engine/**'
+      - '.github/workflows/ai-governance-gate.yml'
+  workflow_dispatch:
+
+jobs:
+  evaluate-ai-governance-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ComplyBridge Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Open Policy Agent (OPA) CLI
+        run: |
+          curl -L -o opa https://openpolicyagent.org/downloads/v0.70.0/opa_linux_amd64_static
+          chmod 755 ./opa
+          sudo mv ./opa /usr/local/bin/opa
+          opa version
+
+      - name: Validate Rego Syntax & Evaluate OPA Policies Across All 4 Systems
+        working-directory: Project-06-AI-Governance-Control-Plane-and-Policy-Engine
+        run: |
+          opa check policies/
+          for f in manifests/*.json; do
+            echo "Evaluating OPA policies against $f..."
+            opa eval --fail-defined -d policies/ -i "$f" "data.complybridge.eu_ai_act.deny[_]"
+            opa eval --fail-defined -d policies/ -i "$f" "data.complybridge.dora.deny[_]"
+            opa eval --fail-defined -d policies/ -i "$f" "data.complybridge.privacy_and_residency.deny[_]"
+          done
+
+      - name: Run Multi-System Governance Gate & Chaos Drift Verification Engine
+        working-directory: Project-06-AI-Governance-Control-Plane-and-Policy-Engine
+        run: python3 engine/validate_governance_gates.py
+
+      - name: Upload Signed Audit Dossier Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RELEASE_AUDIT_EVIDENCE
+          path: Project-06-AI-Governance-Control-Plane-and-Policy-Engine/RELEASE_AUDIT_EVIDENCE.md
