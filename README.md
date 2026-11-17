@@ -1,5 +1,7 @@
 # ComplyBridge AI Governance Kit: Practical AI Risk, IP Protection & Advisory Suite for Indian SaaS and GCCs
 
+[![AI Governance & Regulatory Release Gate](https://github.com/Sashidhar2508/complybridge-ai-governance-kit/actions/workflows/ai-governance-gate.yml/badge.svg)](https://github.com/Sashidhar2508/complybridge-ai-governance-kit/actions/workflows/ai-governance-gate.yml)
+
 **Author & Principal Advisor:** Sashidhar Sripadanna (IAPP AIGP Candidate | OCI Certified AI Associate | 13+ Years Enterprise Cloud and TAM Leadership)  
 **Advisory Practice Timeline:** March 2025 – Present  
 **Regulatory & IP Scope:** EU AI Act (incl. Regulation (EU) 2026/1744 Digital Omnibus), NIST AI RMF 1.0, ISO/IEC 42001 AIMS, India DPDP Act, India IT Amendment Rules 2026, and Enterprise Patent/IP Indemnification  
