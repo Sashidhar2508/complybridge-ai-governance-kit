@@ -1,0 +1,52 @@
+{
+  "system_id": "SYS-04",
+  "code_name": "LG-09",
+  "system_name": "M&A Due-Diligence & Synthetic Executive Briefing Generator",
+  "business_owner": "General Counsel & Corporate Development Risk Lead",
+  "sector_profile": {
+    "industry": "Enterprise Legal & Advisory Workflows (EU & UK)",
+    "is_eu_financial_entity": false,
+    "strict_eea_residency": true
+  },
+  "regulatory_classification": {
+    "eu_ai_act_role": "Provider / Internal Deployer",
+    "risk_tier": "Limited Risk \u2014 Synthetic Content Marking (EU AI Act Art. 50(2) Cliff: 2 Dec 2026)",
+    "is_annex_iii_high_risk": false,
+    "article_5_prohibited_check": "PASSED",
+    "enforcement_milestones": "GPAI Chapter V Active (2 Aug 2025) | Art. 50(2) Grace Period Ends 2 Dec 2026"
+  },
+  "capabilities": {
+    "generates_synthetic_content": true,
+    "autonomous_execution_scope": "Draft Deal Memo Synthesis with C2PA Cryptographic Provenance Metadata"
+  },
+  "model_supply_chain": {
+    "upstream_provider": "OCI Generative AI / Cohere Command R+ (eu-frankfurt-1)",
+    "zero_data_retention_zdr": true,
+    "ip_indemnity_verified": true,
+    "active_regions": [
+      "eu-central-1"
+    ]
+  },
+  "governance_artifacts": {
+    "model_card_id": "MC-LG09-2026-V1.1",
+    "art27_fria_completed": true,
+    "dpia_completed": true,
+    "dpia_standard": "GDPR Art. 35 & Legal Privilege Confidentiality DPIA"
+  },
+  "dora_controls": {
+    "art28_roi_xbrl_csv_registered": false,
+    "art30_cbi_audit_addendum_signed": false,
+    "vendor_incident_sla_hours": 4,
+    "art28_8_exit_plan_tested": true
+  },
+  "runtime_controls": {
+    "art50_1_upfront_disclosure": true,
+    "art50_2_c2pa_watermarking": true,
+    "art14_human_oversight_hard_stop": true,
+    "automated_adverse_decision_prohibited": true,
+    "protected_proxy_filtering": true,
+    "pii_redaction_active": true,
+    "min_faithfulness_score": 0.93,
+    "measured_faithfulness_score": 0.95
+  }
+}

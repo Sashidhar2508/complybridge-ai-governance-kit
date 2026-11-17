@@ -1,0 +1,53 @@
+{
+  "system_id": "SYS-02",
+  "code_name": "HR-04",
+  "system_name": "Enterprise Talent Resume & Structured Interview Scoring Copilot",
+  "business_owner": "VP of People & Talent Operations (EU / India GCC)",
+  "sector_profile": {
+    "industry": "Enterprise SaaS & Global Capability Centre (GCC) Workforce Operations",
+    "is_eu_financial_entity": false,
+    "strict_eea_residency": true
+  },
+  "regulatory_classification": {
+    "eu_ai_act_role": "Deployer",
+    "risk_tier": "High-Risk AI System (EU AI Act Annex III Point 4(a) \u2014 Recruitment & Selection)",
+    "is_annex_iii_high_risk": true,
+    "article_5_prohibited_check": "PASSED",
+    "enforcement_milestones": "Art. 4 Literacy & Art. 5 Active | Art. 50 Active | Annex III & Art. 26(7) Notice (2 Dec 2027)"
+  },
+  "capabilities": {
+    "generates_synthetic_content": false,
+    "autonomous_execution_scope": "Candidate Skill Extraction & Rubric Summary (Human Recruiter Shortlists)"
+  },
+  "model_supply_chain": {
+    "upstream_provider": "Azure OpenAI GPT-4o (EU Data Zone Standard)",
+    "zero_data_retention_zdr": true,
+    "ip_indemnity_verified": true,
+    "active_regions": [
+      "eu-west-1",
+      "eu-central-1"
+    ]
+  },
+  "governance_artifacts": {
+    "model_card_id": "MC-HR04-2026-V2.0",
+    "art27_fria_completed": true,
+    "dpia_completed": true,
+    "dpia_standard": "GDPR Art. 35 & EU AI Act Art. 4a Bias-Audit Safeguard"
+  },
+  "dora_controls": {
+    "art28_roi_xbrl_csv_registered": false,
+    "art30_cbi_audit_addendum_signed": false,
+    "vendor_incident_sla_hours": 4,
+    "art28_8_exit_plan_tested": true
+  },
+  "runtime_controls": {
+    "art50_1_upfront_disclosure": true,
+    "art50_2_c2pa_watermarking": true,
+    "art14_human_oversight_hard_stop": true,
+    "automated_adverse_decision_prohibited": true,
+    "protected_proxy_filtering": true,
+    "pii_redaction_active": true,
+    "min_faithfulness_score": 0.94,
+    "measured_faithfulness_score": 0.96
+  }
+}

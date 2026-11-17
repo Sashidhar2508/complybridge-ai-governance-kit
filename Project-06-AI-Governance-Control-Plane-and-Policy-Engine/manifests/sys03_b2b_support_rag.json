@@ -1,0 +1,54 @@
+{
+  "system_id": "SYS-03",
+  "code_name": "VF-02",
+  "system_name": "VeloceFlow Multi-Tenant B2B Customer Support RAG Assistant",
+  "business_owner": "Head of Customer Operations & Trust Engineering",
+  "sector_profile": {
+    "industry": "B2B Cloud SaaS (EU & India Enterprise Customers)",
+    "is_eu_financial_entity": false,
+    "strict_eea_residency": false
+  },
+  "regulatory_classification": {
+    "eu_ai_act_role": "Provider",
+    "risk_tier": "Limited Risk (EU AI Act Art. 50(1) Transparency \u2014 Enforced since 2 Aug 2026)",
+    "is_annex_iii_high_risk": false,
+    "article_5_prohibited_check": "PASSED",
+    "enforcement_milestones": "EU AI Act Art. 50(1) Live (2 Aug 2026) | India DPDP & IT Rules 2026"
+  },
+  "capabilities": {
+    "generates_synthetic_content": false,
+    "autonomous_execution_scope": "Grounded Documentation Q&A with 1-Click Human Agent Escalation"
+  },
+  "model_supply_chain": {
+    "upstream_provider": "Anthropic Claude 3.5 Sonnet (AWS Bedrock)",
+    "zero_data_retention_zdr": true,
+    "ip_indemnity_verified": true,
+    "active_regions": [
+      "eu-west-1",
+      "eu-central-1",
+      "ap-south-1"
+    ]
+  },
+  "governance_artifacts": {
+    "model_card_id": "MC-VF02-2026-V2.4",
+    "art27_fria_completed": true,
+    "dpia_completed": true,
+    "dpia_standard": "GDPR Art. 28/35 & India DPDP Cross-Border Transfer Record"
+  },
+  "dora_controls": {
+    "art28_roi_xbrl_csv_registered": false,
+    "art30_cbi_audit_addendum_signed": false,
+    "vendor_incident_sla_hours": 4,
+    "art28_8_exit_plan_tested": true
+  },
+  "runtime_controls": {
+    "art50_1_upfront_disclosure": true,
+    "art50_2_c2pa_watermarking": true,
+    "art14_human_oversight_hard_stop": true,
+    "automated_adverse_decision_prohibited": true,
+    "protected_proxy_filtering": true,
+    "pii_redaction_active": true,
+    "min_faithfulness_score": 0.9,
+    "measured_faithfulness_score": 0.96
+  }
+}

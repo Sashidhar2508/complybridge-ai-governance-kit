@@ -1,0 +1,53 @@
+{
+  "system_id": "SYS-01",
+  "code_name": "FF-06",
+  "system_name": "EmeraldPay Dublin IFSC SME Credit & Fraud Triage Engine",
+  "business_owner": "Chief Risk Officer (CRO), EmeraldPay Financial Technologies DAC (Dublin IFSC)",
+  "sector_profile": {
+    "industry": "EU Regulated Electronic Money & SME Lending (Central Bank of Ireland Supervised)",
+    "is_eu_financial_entity": true,
+    "strict_eea_residency": true
+  },
+  "regulatory_classification": {
+    "eu_ai_act_role": "Deployer & High-Risk Customizer",
+    "risk_tier": "High-Risk AI System (EU AI Act Annex III Point 5(b) \u2014 Creditworthiness)",
+    "is_annex_iii_high_risk": true,
+    "article_5_prohibited_check": "PASSED",
+    "enforcement_milestones": "Art. 50 Active (2 Aug 2026) | DORA Active (17 Jan 2025) | Annex III Readiness (2 Dec 2027)"
+  },
+  "capabilities": {
+    "generates_synthetic_content": false,
+    "autonomous_execution_scope": "Advisory Triage Memo Only (Zero Auto-Decline)"
+  },
+  "model_supply_chain": {
+    "upstream_provider": "Anthropic Claude 3.5 Sonnet via AWS Bedrock EEA Inference Profile",
+    "zero_data_retention_zdr": true,
+    "ip_indemnity_verified": true,
+    "active_regions": [
+      "eu-west-1",
+      "eu-central-1"
+    ]
+  },
+  "governance_artifacts": {
+    "model_card_id": "MC-FF06-2026-V1.2",
+    "art27_fria_completed": true,
+    "dpia_completed": true,
+    "dpia_standard": "Irish Data Protection Commission (DPC) 6-Step DPIA Framework"
+  },
+  "dora_controls": {
+    "art28_roi_xbrl_csv_registered": true,
+    "art30_cbi_audit_addendum_signed": true,
+    "vendor_incident_sla_hours": 2,
+    "art28_8_exit_plan_tested": true
+  },
+  "runtime_controls": {
+    "art50_1_upfront_disclosure": true,
+    "art50_2_c2pa_watermarking": true,
+    "art14_human_oversight_hard_stop": true,
+    "automated_adverse_decision_prohibited": true,
+    "protected_proxy_filtering": true,
+    "pii_redaction_active": true,
+    "min_faithfulness_score": 0.96,
+    "measured_faithfulness_score": 0.97
+  }
+}
